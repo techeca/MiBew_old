@@ -8,7 +8,7 @@ enableRobotsTXT = true
 
 [params]
     # URL for the avatar on homepage
-    avatarURL = "images/horrible.png"
+    avatarURL = "/images/horrible.png"
 
     # Description to display on homepage
     description = "Mejor lo voy anotar, después se me olvida"

@@ -59,7 +59,7 @@ En `/config.toml` debemos agregar `[params]` para agregar información básica y
 para agregar las categorías de nuestro blog.
 {{< highlight toml >}}
 [params]
-    avatarURL = "images/horrible.png"
+    avatarURL = "/images/horrible.png"
     description = "Mejor lo voy anotar, después se me olvida"
     customHeadHTML = '''
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
