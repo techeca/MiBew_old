@@ -157,7 +157,7 @@ Not yet
 
 Mucha de la configuración que se realizó no está bien detallada en esta guía por lo que te recomiendo que leas lo siguiente para que te quites algunas dudas.
 
-:link:[Repositorio de este proyecto en Github](https://main--gokarna-hugo.netlify.app/posts/theme-documentation-basics//)
+:link:[Repositorio de este proyecto en Github](https://github.com/techeca/MiBew)
 
 :link:Si tienes problemas para agregar otros accesos ademas de post (como /tags o /projects), dejo la [documentacion de Gokarna](https://main--gokarna-hugo.netlify.app/posts/theme-documentation-basics//) con más detalles de el porqué de algunas cosas.
 
