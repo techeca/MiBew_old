@@ -1,0 +1,173 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>:root{--accent-color:#FF4D4D}</style>
+<title>Generar Favicons y Manifest</title>
+<meta name=description content="Como generar favicons y manifest para tu web.">
+<meta name=keywords content="blog,gokarna,hugo,hola,mundo,ggwp,Web">
+<meta property="og:url" content="https://techeca.github.io/posts/generar_favicons_manifest/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generar Favicons y Manifest">
+<meta property="og:description" content="Como generar favicons y manifest para tu web.">
+<meta property="og:image" content="images/horrible.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Generar Favicons y Manifest">
+<meta name=twitter:description content="Como generar favicons y manifest para tu web.">
+<meta property="twitter:domain" content="https://techeca.github.io/posts/generar_favicons_manifest/">
+<meta property="twitter:url" content="https://techeca.github.io/posts/generar_favicons_manifest/">
+<meta name=twitter:image content="images/horrible.png">
+<link rel=canonical href=https://techeca.github.io/posts/generar_favicons_manifest/>
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/normalize.min.css media=print onload="this.media='all'">
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/main.css>
+<link disabled id=dark-theme rel=stylesheet href=https://techeca.github.io//css/dark.css>
+<script src=https://techeca.github.io//js/svg-injector.min.js></script>
+<script src=https://techeca.github.io//js/feather-icons.min.js></script>
+<script src=https://techeca.github.io//js/main.js></script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+</head>
+<body>
+<script type=text/javascript>setThemeByUserPref()</script><header class=header>
+<nav class=header-nav>
+<div class=avatar>
+<a href=https://techeca.github.io/>
+<img src=https://techeca.github.io/images/horrible.png alt=avatar>
+</a>
+</div>
+<div class=nav-title>
+<a class=nav-brand href=https://techeca.github.io/>MiBew</a>
+</div>
+<div class=nav-links>
+<div class=nav-link>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</div>
+<div class=nav-link>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</div>
+<div class=nav-link>
+<a href=https://github.com><span data-feather=github></span> </a>
+</div>
+<span class=nav-icons-divider></span>
+<div class="nav-link dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</div>
+<div class=nav-link id=hamburger-menu-toggle>
+<span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a>
+<span data-feather=menu></span>
+</a>
+</div>
+<ul class="nav-hamburger-list visibility-hidden">
+<li class=nav-item>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</li>
+<li class=nav-item>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</li>
+<li class=nav-item>
+<a href=https://github.com><span data-feather=github></span> </a>
+</li>
+<li class="nav-item dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main id=content>
+<div class="post container">
+<div class=post-header-section>
+<h1>Generar Favicons y Manifest</h1>
+<small role=doc-subtitle>Como generar favicons y manifest para tu web.</small>
+<p class=post-date>
+September 28, 2022
+</p>
+<ul class=post-tags>
+<li class=post-tag><a href=https://techeca.github.io/tags/web>Web</a></li>
+</ul>
+</div>
+<div class=post-content>
+<p>
+<h1 id=favicons-y-manifest>Favicons y Manifest</h1>
+<p>En internet puedes encontrar muchas herramientas para generar estos archivos, aqui te dejo uno que he probado y como usarlo.</p>
+<h2 id=favicon-web>Favicon Web</h2>
+<p>Esta herramienta online va a generar por ti los iconos (favicons) y manifest, debes tener una imagen ya lista y subirla aquí en el <a href=https://favicon.io/favicon-converter/>convertidor de Favicon</a> y luego descargarlo.</p>
+<p><img src=/images/ddfavicon.png alt="Favicon Drag & Drop" title="Favicon Drag & Drop"></p>
+<p>El contenido del archivo descargado debería ser así:</p>
+<p><img src=/images/zipfavicon.png alt="Contenido zip Favicon" title="Contenido zip Favicon"></p>
+<p>Si seguimos las instrucciones de la web, ahora deberíamos insertar los archivos en nuestro <code>HTML</code> en la etiqueta <code>HEAD</code>, algo así:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>head</span>&gt;
+  &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;apple-touch-icon&#34;</span> <span style=color:#a6e22e>sizes</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;180x180&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/apple-touch-icon.png&#34;</span>&gt;
+  &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;icon&#34;</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;image/png&#34;</span> <span style=color:#a6e22e>sizes</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;32x32&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/favicon-32x32.png&#34;</span>&gt;
+  &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;icon&#34;</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;image/png&#34;</span> <span style=color:#a6e22e>sizes</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;16x16&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/favicon-16x16.png&#34;</span>&gt;
+  &lt;<span style=color:#f92672>link</span> <span style=color:#a6e22e>rel</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;manifest&#34;</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/site.webmanifest&#34;</span>&gt;
+&lt;/<span style=color:#f92672>head</span>&gt;</code></pre></div></p>
+<p>Si vienes de instalar HUGO con Gokarna y quieres agregarlo a <code>customHeadHTML</code> debes agregarlo de la siguiente manera:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>customHeadHTML <span style=color:#f92672>=</span> <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>&lt;link rel=&#34;apple-touch-icon&#34; sizes=&#34;180x180&#34; href=&#34;/apple-touch-icon.png&#34;&gt;
+</span><span style=color:#e6db74>&lt;link rel=&#34;icon&#34; type=&#34;image/png&#34; sizes=&#34;32x32&#34; href=&#34;/favicon-32x32.png&#34;&gt;
+</span><span style=color:#e6db74>&lt;link rel=&#34;icon&#34; type=&#34;image/png&#34; sizes=&#34;16x16&#34; href=&#34;/favicon-16x16.png&#34;&gt;
+</span><span style=color:#e6db74>&lt;link rel=&#34;manifest&#34; href=&#34;/site.webmanifest&#34;&gt;
+</span><span style=color:#e6db74>&#39;&#39;&#39;</span></code></pre></div>
+Y no olvides dejar las imagenes/iconos en la carpeta <code>/static</code>.</p>
+<h3 id=manifest>Manifest</h3>
+<p>En el zip descargado tenemos un archivo llamado <code>site.webmanifest</code> el cual entrega información sobre nuestra web, la estructura es algo asi (los datos varian ya que este ejemplo es de Mozilla):
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+  <span style=color:#f92672>&#34;name&#34;</span>: <span style=color:#e6db74>&#34;Google I/O 2015&#34;</span>,
+  <span style=color:#f92672>&#34;short_name&#34;</span>: <span style=color:#e6db74>&#34;I/O 2015&#34;</span>,
+  <span style=color:#f92672>&#34;icons&#34;</span>: [{
+    <span style=color:#f92672>&#34;src&#34;</span>: <span style=color:#e6db74>&#34;images/touch/homescreen48.png&#34;</span>,
+    <span style=color:#f92672>&#34;sizes&#34;</span>: <span style=color:#e6db74>&#34;48x48&#34;</span>,
+    <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;image/png&#34;</span>
+  }, {
+    <span style=color:#f92672>&#34;src&#34;</span>: <span style=color:#e6db74>&#34;images/touch/homescreen72.png&#34;</span>,
+    <span style=color:#f92672>&#34;sizes&#34;</span>: <span style=color:#e6db74>&#34;72x72&#34;</span>,
+    <span style=color:#f92672>&#34;type&#34;</span>: <span style=color:#e6db74>&#34;image/png&#34;</span>
+  }],
+  <span style=color:#f92672>&#34;related_applications&#34;</span>: [{
+    <span style=color:#f92672>&#34;platform&#34;</span>: <span style=color:#e6db74>&#34;web&#34;</span>
+  }, {
+    <span style=color:#f92672>&#34;platform&#34;</span>: <span style=color:#e6db74>&#34;play&#34;</span>,
+    <span style=color:#f92672>&#34;url&#34;</span>: <span style=color:#e6db74>&#34;https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched&#34;</span>
+  }]
+}</code></pre></div>
+El archivo que nosotros descargamos está reducido, aunque lo único que nos interesa cambiar es <code>name</code> y <code>short_name</code>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{<span style=color:#f92672>&#34;name&#34;</span>:<span style=color:#e6db74>&#34;MiBew&#34;</span>,<span style=color:#f92672>&#34;short_name&#34;</span>:<span style=color:#e6db74>&#34;Bloc de notas&#34;</span>, <span style=color:#960050;background-color:#1e0010>...</span>}</code></pre></div></p>
+<p>🔗Te dejo la <a href=https://favicon.io>página Web de Favicon</a> para que la mires.
+🔗<a href=https://developer.mozilla.org/es/docs/Web/Manifest>Documentación de Mozilla sobre App Manifest</a>.</p>
+</p>
+</div>
+</div>
+<aside class=post-toc>
+<nav id=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#favicons-y-manifest>Favicons y Manifest</a>
+<ul>
+<li><a href=#favicon-web>Favicon Web</a>
+<ul>
+<li><a href=#manifest>Manifest</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</nav>
+</aside>
+</main><footer class=footer>
+<span>&copy; 2022 MiBew</span>
+<span>
+Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a>
+</span>
+</footer>
+</body>
+</html>

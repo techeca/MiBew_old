@@ -1,0 +1,141 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>:root{--accent-color:#FF4D4D}</style>
+<title>Instalar Chocolatey</title>
+<meta name=description content="Guía para instalar Chocolatey.">
+<meta name=keywords content="blog,gokarna,hugo,hola,mundo,ggwp,Instalar y Configurar">
+<meta property="og:url" content="https://techeca.github.io/posts/instalar_chocolatey/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Instalar Chocolatey">
+<meta property="og:description" content="Guía para instalar Chocolatey.">
+<meta property="og:image" content="images/horrible.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Instalar Chocolatey">
+<meta name=twitter:description content="Guía para instalar Chocolatey.">
+<meta property="twitter:domain" content="https://techeca.github.io/posts/instalar_chocolatey/">
+<meta property="twitter:url" content="https://techeca.github.io/posts/instalar_chocolatey/">
+<meta name=twitter:image content="images/horrible.png">
+<link rel=canonical href=https://techeca.github.io/posts/instalar_chocolatey/>
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/normalize.min.css media=print onload="this.media='all'">
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/main.css>
+<link disabled id=dark-theme rel=stylesheet href=https://techeca.github.io//css/dark.css>
+<script src=https://techeca.github.io//js/svg-injector.min.js></script>
+<script src=https://techeca.github.io//js/feather-icons.min.js></script>
+<script src=https://techeca.github.io//js/main.js></script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+</head>
+<body>
+<script type=text/javascript>setThemeByUserPref()</script><header class=header>
+<nav class=header-nav>
+<div class=avatar>
+<a href=https://techeca.github.io/>
+<img src=https://techeca.github.io/images/horrible.png alt=avatar>
+</a>
+</div>
+<div class=nav-title>
+<a class=nav-brand href=https://techeca.github.io/>MiBew</a>
+</div>
+<div class=nav-links>
+<div class=nav-link>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</div>
+<div class=nav-link>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</div>
+<div class=nav-link>
+<a href=https://github.com><span data-feather=github></span> </a>
+</div>
+<span class=nav-icons-divider></span>
+<div class="nav-link dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</div>
+<div class=nav-link id=hamburger-menu-toggle>
+<span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a>
+<span data-feather=menu></span>
+</a>
+</div>
+<ul class="nav-hamburger-list visibility-hidden">
+<li class=nav-item>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</li>
+<li class=nav-item>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</li>
+<li class=nav-item>
+<a href=https://github.com><span data-feather=github></span> </a>
+</li>
+<li class="nav-item dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main id=content>
+<div class="post container">
+<div class=post-header-section>
+<h1>Instalar Chocolatey</h1>
+<small role=doc-subtitle>Guía para instalar Chocolatey.</small>
+<p class=post-date>
+September 28, 2022
+</p>
+<ul class=post-tags>
+<li class=post-tag><a href=https://techeca.github.io/tags/instalar-y-configurar>Instalar y Configurar</a></li>
+</ul>
+</div>
+<div class=post-content>
+<p>
+<h1 id=instalar-chocolatey>Instalar Chocolatey</h1>
+<p>A continuación dejo los pasos para la instalación que yo considero más simple o posiblemente la única que he probado 🤡.</p>
+<blockquote>
+<p>Chocolatey es un gestor de paquetes de línea de comandos para Microsoft Windows. Utiliza la infraestructura de empaquetado de NuGet y PowerShell para simplificar el proceso de descarga e instalación de software.</p>
+</blockquote>
+<p>Podemos utilizar <code>CMD</code> o <code>PowerShell</code></p>
+<h2 id=cmd>CMD</h2>
+<p>Abrimos <code>CMD</code> con permisos de administrador y ejecutamos:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>@<span style=color:#e6db74>&#34;%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe&#34;</span> -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command <span style=color:#e6db74>&#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://community.chocolatey.org/install.ps1&#39;))&#34;</span> <span style=color:#f92672>&amp;&amp;</span> SET <span style=color:#e6db74>&#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</span></code></pre></div></p>
+<h2 id=powershell>PowerShell</h2>
+<p>Tambien lo podemos hacer con <code>PowerShell</code>, ejecutamos el siguiente comando:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>Set-ExecutionPolicy Bypass -Scope Process -Force; iex <span style=color:#f92672>((</span>New-Object System.Net.WebClient<span style=color:#f92672>)</span>.DownloadString<span style=color:#f92672>(</span><span style=color:#e6db74>&#39;https://community.chocolatey.org/install.ps1&#39;</span><span style=color:#f92672>))</span></code></pre></div></p>
+<p>Revisa la versión de Chocolatey con:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>choco --v</code></pre></div></p>
+<p>En mi caso la salida es la siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Chocolatey v0.11.2</code></pre></div></p>
+<p>Ya tenemos instalado Chocolatery listo para instalar más cosas 😎.</p>
+<p>🔗Te dejo la <a href=https://chocolatey.org/install>página Web de Chocolatey</a> para documentación más detallada.</p>
+</p>
+</div>
+</div>
+<aside class=post-toc>
+<nav id=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#instalar-chocolatey>Instalar Chocolatey</a>
+<ul>
+<li><a href=#cmd>CMD</a></li>
+<li><a href=#powershell>PowerShell</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</nav>
+</aside>
+</main><footer class=footer>
+<span>&copy; 2022 MiBew</span>
+<span>
+Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a>
+</span>
+</footer>
+</body>
+</html>

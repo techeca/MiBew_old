@@ -1,0 +1,154 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>:root{--accent-color:#FF4D4D}</style>
+<title>Instalar GIT</title>
+<meta name=description content="Guía para instalar GIT en Windows, Linux y Mac.">
+<meta name=keywords content="blog,gokarna,hugo,hola,mundo,ggwp,Instalar y Configurar">
+<meta property="og:url" content="https://techeca.github.io/posts/instalar_git/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Instalar GIT">
+<meta property="og:description" content="Guía para instalar GIT en Windows, Linux y Mac.">
+<meta property="og:image" content="images/horrible.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Instalar GIT">
+<meta name=twitter:description content="Guía para instalar GIT en Windows, Linux y Mac.">
+<meta property="twitter:domain" content="https://techeca.github.io/posts/instalar_git/">
+<meta property="twitter:url" content="https://techeca.github.io/posts/instalar_git/">
+<meta name=twitter:image content="images/horrible.png">
+<link rel=canonical href=https://techeca.github.io/posts/instalar_git/>
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/normalize.min.css media=print onload="this.media='all'">
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/main.css>
+<link disabled id=dark-theme rel=stylesheet href=https://techeca.github.io//css/dark.css>
+<script src=https://techeca.github.io//js/svg-injector.min.js></script>
+<script src=https://techeca.github.io//js/feather-icons.min.js></script>
+<script src=https://techeca.github.io//js/main.js></script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+</head>
+<body>
+<script type=text/javascript>setThemeByUserPref()</script><header class=header>
+<nav class=header-nav>
+<div class=avatar>
+<a href=https://techeca.github.io/>
+<img src=https://techeca.github.io/images/horrible.png alt=avatar>
+</a>
+</div>
+<div class=nav-title>
+<a class=nav-brand href=https://techeca.github.io/>MiBew</a>
+</div>
+<div class=nav-links>
+<div class=nav-link>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</div>
+<div class=nav-link>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</div>
+<div class=nav-link>
+<a href=https://github.com><span data-feather=github></span> </a>
+</div>
+<span class=nav-icons-divider></span>
+<div class="nav-link dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</div>
+<div class=nav-link id=hamburger-menu-toggle>
+<span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a>
+<span data-feather=menu></span>
+</a>
+</div>
+<ul class="nav-hamburger-list visibility-hidden">
+<li class=nav-item>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</li>
+<li class=nav-item>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</li>
+<li class=nav-item>
+<a href=https://github.com><span data-feather=github></span> </a>
+</li>
+<li class="nav-item dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main id=content>
+<div class="post container">
+<div class=post-header-section>
+<h1>Instalar GIT</h1>
+<small role=doc-subtitle>Guía para instalar GIT en Windows, Linux y Mac.</small>
+<p class=post-date>
+September 28, 2022
+</p>
+<ul class=post-tags>
+<li class=post-tag><a href=https://techeca.github.io/tags/instalar-y-configurar>Instalar y Configurar</a></li>
+</ul>
+</div>
+<div class=post-content>
+<p>
+<h1 id=instalar-git>Instalar GIT</h1>
+<p>A continuación dejo los pasos para la instalación de GIT, el cual puede ser utilizado en Windows, Linux y Mac.</p>
+<blockquote>
+<p>Homebrew es un sistema de gestión de paquetes que simplifica la instalación, actualización y eliminación de programas en los sistemas operativos Mac OS de Apple y GNU/Linux.</p>
+</blockquote>
+<h2 id=windows>Windows</h2>
+<p>Debemos entrar en <a href=https://git-scm.com/download/win>la página oficial de GIT</a> y descargar la versión que nos corresponda, ya sea de 32-bit o 64-bit.</p>
+<p>Podemos probar que todo está correcto con el siguiente comando:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git --version</code></pre></div></p>
+<p>En mi caso la salida es la siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git version 2.33.1.windows.1</code></pre></div></p>
+<h2 id=linux>Linux</h2>
+<p>En Linux va a depender la distro que estás utilizando, aquí está la <a href=https://git-scm.com/download/linux>web de GIT con todos los comandos disponibles según la distro</a>.\</p>
+<p>Igual dejo la versión de Ubunto como ejemplo.
+Recuerda actualizar la lista de paquetes con <code>apt-get update</code> y <code>sudo</code> si es necesario.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo apt-get install git</code></pre></div></p>
+<p>Revisa la versión con:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git --version</code></pre></div></p>
+<p>En mi caso la salida es la siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git version 2.25.1</code></pre></div></p>
+<h2 id=mac>Mac</h2>
+<p>En los sistemas Mac puedes utilizar Homebrew, puedes ver <a href=/posts/instalar_homebrew/>como instalar Homebrew aquí</a>.</p>
+<p>Instalamos GIT utilizando Homebrew con el siguiente comando:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>brew install git</code></pre></div></p>
+<p>Revisa la versión con:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git --version</code></pre></div></p>
+<p>En mi caso la salida es la siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git version 2.25.1</code></pre></div></p>
+<p>Eso es todo, ya tenemos instalado GIT.</p>
+<p>🔗Te dejo la <a href=https://git-scm.com>página Web de GIT</a> para documentación más detallada.</p>
+</p>
+</div>
+</div>
+<aside class=post-toc>
+<nav id=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#instalar-git>Instalar GIT</a>
+<ul>
+<li><a href=#windows>Windows</a></li>
+<li><a href=#linux>Linux</a></li>
+<li><a href=#mac>Mac</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</nav>
+</aside>
+</main><footer class=footer>
+<span>&copy; 2022 MiBew</span>
+<span>
+Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a>
+</span>
+</footer>
+</body>
+</html>

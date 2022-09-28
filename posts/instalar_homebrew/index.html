@@ -1,0 +1,137 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>:root{--accent-color:#FF4D4D}</style>
+<title>Instalar Homebrew</title>
+<meta name=description content="Guía para instalar Homebrew.">
+<meta name=keywords content="blog,gokarna,hugo,hola,mundo,ggwp,Instalar y Configurar">
+<meta property="og:url" content="https://techeca.github.io/posts/instalar_homebrew/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Instalar Homebrew">
+<meta property="og:description" content="Guía para instalar Homebrew.">
+<meta property="og:image" content="images/horrible.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Instalar Homebrew">
+<meta name=twitter:description content="Guía para instalar Homebrew.">
+<meta property="twitter:domain" content="https://techeca.github.io/posts/instalar_homebrew/">
+<meta property="twitter:url" content="https://techeca.github.io/posts/instalar_homebrew/">
+<meta name=twitter:image content="images/horrible.png">
+<link rel=canonical href=https://techeca.github.io/posts/instalar_homebrew/>
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/normalize.min.css media=print onload="this.media='all'">
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/main.css>
+<link disabled id=dark-theme rel=stylesheet href=https://techeca.github.io//css/dark.css>
+<script src=https://techeca.github.io//js/svg-injector.min.js></script>
+<script src=https://techeca.github.io//js/feather-icons.min.js></script>
+<script src=https://techeca.github.io//js/main.js></script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+</head>
+<body>
+<script type=text/javascript>setThemeByUserPref()</script><header class=header>
+<nav class=header-nav>
+<div class=avatar>
+<a href=https://techeca.github.io/>
+<img src=https://techeca.github.io/images/horrible.png alt=avatar>
+</a>
+</div>
+<div class=nav-title>
+<a class=nav-brand href=https://techeca.github.io/>MiBew</a>
+</div>
+<div class=nav-links>
+<div class=nav-link>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</div>
+<div class=nav-link>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</div>
+<div class=nav-link>
+<a href=https://github.com><span data-feather=github></span> </a>
+</div>
+<span class=nav-icons-divider></span>
+<div class="nav-link dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</div>
+<div class=nav-link id=hamburger-menu-toggle>
+<span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a>
+<span data-feather=menu></span>
+</a>
+</div>
+<ul class="nav-hamburger-list visibility-hidden">
+<li class=nav-item>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</li>
+<li class=nav-item>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</li>
+<li class=nav-item>
+<a href=https://github.com><span data-feather=github></span> </a>
+</li>
+<li class="nav-item dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main id=content>
+<div class="post container">
+<div class=post-header-section>
+<h1>Instalar Homebrew</h1>
+<small role=doc-subtitle>Guía para instalar Homebrew.</small>
+<p class=post-date>
+September 28, 2022
+</p>
+<ul class=post-tags>
+<li class=post-tag><a href=https://techeca.github.io/tags/instalar-y-configurar>Instalar y Configurar</a></li>
+</ul>
+</div>
+<div class=post-content>
+<p>
+<h1 id=instalar-homebrew>Instalar Homebrew</h1>
+<p>A continuación dejo los pasos para la instalación de Homebrew, el cual puede ser utilizado en Linux y Mac.</p>
+<blockquote>
+<p>Homebrew es un sistema de gestión de paquetes que simplifica la instalación, actualización y eliminación de programas en los sistemas operativos Mac OS de Apple y GNU/Linux.</p>
+</blockquote>
+<h2 id=terminal>Terminal</h2>
+<p>Abrimos nuestra <code>Terminal</code> de preferencia y ejecutamos:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>/bin/bash -c <span style=color:#e6db74>&#34;</span><span style=color:#66d9ef>$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style=color:#66d9ef>)</span><span style=color:#e6db74>&#34;</span></code></pre></div></p>
+<p>Revisa la versión de Homebrew con:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>brew -v</code></pre></div></p>
+<p>En mi caso la salida es la siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Homebrew 3.6.3
+Homebrew/homebrew-core <span style=color:#f92672>(</span>git revision 2c17277b7fb; last commit 2022-09-28<span style=color:#f92672>)</span></code></pre></div></p>
+<p>Ya tenemos instalado Homebrew listo para instalar más cosas 😎.</p>
+<p>🔗Te dejo la <a href=https://brew.sh/>página Web de Homebrew</a> para documentación más detallada.</p>
+</p>
+</div>
+</div>
+<aside class=post-toc>
+<nav id=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#instalar-homebrew>Instalar Homebrew</a>
+<ul>
+<li><a href=#terminal>Terminal</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</nav>
+</aside>
+</main><footer class=footer>
+<span>&copy; 2022 MiBew</span>
+<span>
+Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a>
+</span>
+</footer>
+</body>
+</html>

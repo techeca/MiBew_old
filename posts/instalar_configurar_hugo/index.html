@@ -1,0 +1,264 @@
+<!doctype html><html lang=en><head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<style>:root{--accent-color:#FF4D4D}</style>
+<title>Instalar y Configurar HUGO</title>
+<meta name=description content="Guía para instalar y configurar HUGO, framework para generar web estáticas.">
+<meta name=keywords content="blog,gokarna,hugo,hola,mundo,ggwp,Instalar y Configurar">
+<meta property="og:url" content="https://techeca.github.io/posts/instalar_configurar_hugo/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Instalar y Configurar HUGO">
+<meta property="og:description" content="Guía para instalar y configurar HUGO, framework para generar web estáticas.">
+<meta property="og:image" content="images/horrible.png">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Instalar y Configurar HUGO">
+<meta name=twitter:description content="Guía para instalar y configurar HUGO, framework para generar web estáticas.">
+<meta property="twitter:domain" content="https://techeca.github.io/posts/instalar_configurar_hugo/">
+<meta property="twitter:url" content="https://techeca.github.io/posts/instalar_configurar_hugo/">
+<meta name=twitter:image content="images/horrible.png">
+<link rel=canonical href=https://techeca.github.io/posts/instalar_configurar_hugo/>
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/normalize.min.css media=print onload="this.media='all'">
+<link rel=stylesheet type=text/css href=https://techeca.github.io//css/main.css>
+<link disabled id=dark-theme rel=stylesheet href=https://techeca.github.io//css/dark.css>
+<script src=https://techeca.github.io//js/svg-injector.min.js></script>
+<script src=https://techeca.github.io//js/feather-icons.min.js></script>
+<script src=https://techeca.github.io//js/main.js></script>
+<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+<link rel=manifest href=/site.webmanifest>
+</head>
+<body>
+<script type=text/javascript>setThemeByUserPref()</script><header class=header>
+<nav class=header-nav>
+<div class=avatar>
+<a href=https://techeca.github.io/>
+<img src=https://techeca.github.io/images/horrible.png alt=avatar>
+</a>
+</div>
+<div class=nav-title>
+<a class=nav-brand href=https://techeca.github.io/>MiBew</a>
+</div>
+<div class=nav-links>
+<div class=nav-link>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</div>
+<div class=nav-link>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</div>
+<div class=nav-link>
+<a href=https://github.com><span data-feather=github></span> </a>
+</div>
+<span class=nav-icons-divider></span>
+<div class="nav-link dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only></span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</div>
+<div class=nav-link id=hamburger-menu-toggle>
+<span id=hamburger-menu-toggle-screen-reader-target class=sr-only>menu</span>
+<a>
+<span data-feather=menu></span>
+</a>
+</div>
+<ul class="nav-hamburger-list visibility-hidden">
+<li class=nav-item>
+<a href=https://techeca.github.io/posts/><span data-feather=book></span> Posts </a>
+</li>
+<li class=nav-item>
+<a href=https://techeca.github.io/tags/><span data-feather=tag></span> Tags </a>
+</li>
+<li class=nav-item>
+<a href=https://github.com><span data-feather=github></span> </a>
+</li>
+<li class="nav-item dark-theme-toggle">
+<span id=dark-theme-toggle-screen-reader-target class=sr-only>theme</span>
+<a>
+<span id=theme-toggle-icon data-feather=moon></span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main id=content>
+<div class="post container">
+<div class=post-header-section>
+<h1>Instalar y Configurar HUGO</h1>
+<small role=doc-subtitle>Guía para instalar y configurar HUGO, framework para generar web estáticas.</small>
+<p class=post-date>
+September 27, 2022
+</p>
+<ul class=post-tags>
+<li class=post-tag><a href=https://techeca.github.io/tags/instalar-y-configurar>Instalar y Configurar</a></li>
+</ul>
+</div>
+<div class=post-content>
+<p>
+<h1 id=instalar-hugo>Instalar HUGO</h1>
+<p>Se puede instalar HUGO de distintas formas, en este proyecto vas a necesitar:</p>
+<p><a href=https://gokarna-hugo.netlify.app/>Chocolatey</a> (Windows) o <a href=https://brew.sh/index_es>Homebrew</a> (Linux/Mac)<br>
+<a href=https://git-scm.com/>GIT</a> (Para descargar Tema)</p>
+<blockquote>
+<p>Hugo es un framework para la creación de sitios web de propósito general.</p>
+</blockquote>
+<p>Si no tienes Chocolatey/Homebrew o GIT, puedes encontrar una guía con documentación aquí:</p>
+<p>👉 <a href=/posts/instalar_chocolatey>Como instalar Chocolatey</a><br>
+👉 <a href=/posts/instalar_homebrew>Como instalar Homebrew</a><br>
+👉 <a href=/posts/instalar_git>Como instalar GIT</a></p>
+<p>Instala HUGO corriento el siguiente comando:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>choco install hugo -confirm</code></pre></div>
+En la ruta donde vas a crear tu proyecto ejecuta lo siguiente:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>hugo new site mibew</code></pre></div></p>
+<blockquote>
+<p>mibew es el nombre del proyecto</p>
+</blockquote>
+<p>Ya tenemos creado nuestro proyecto, pero aún no tiene nada 😂, next.</p>
+<h2 id=configurar-hugo>Configurar HUGO</h2>
+<p>Antes de agregar contenido vamos agregar un tema, en este caso <a href=https://main--gokarna-hugo.netlify.app>Gokarna</a>, se ve bonito
+y limpio.
+<img src=https://d33wubrfki0l68.cloudfront.net/552b6b2d212c894a334d201b1b840a068affe798/ac42b/themes/gokarna/screenshot_hu220694613ad2158d77e02a6451275a96_76721_750x500_fill_catmullrom_top_3.png alt="Gokarna Theme Preview" title="Gokarna Theme Preview"></p>
+<h3 id=agregar-tema>Agregar Tema</h3>
+<p>Preparamos nuestro proyecto para git con <code>git init</code> (Si es que aún no lo haces) e instalamos el tema desde
+su repositorio.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git init
+git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna</code></pre></div>
+En la raíz de tu proyecto se encuentra el archivo <code>config.toml</code>, debemos agregar las siguientes líneas.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=color:#a6e22e>theme</span> = <span style=color:#e6db74>&#34;gokarna&#34;</span>
+<span style=color:#a6e22e>enableEmoji</span> = <span style=color:#66d9ef>true</span>
+<span style=color:#a6e22e>enableRobotsTXT</span> = <span style=color:#66d9ef>true</span></code></pre></div></p>
+<blockquote>
+<p>Según Wikipedia, TOML es un formato de archivo de configuración que es fácil de leer debido a la semántica obvia que pretende ser &ldquo;mínima&rdquo;.</p>
+</blockquote>
+<h4 id=configurar-tema>Configurar Tema</h4>
+<p>Si bien no todos estos parámetros son necesarios, se recomiendan para un buen funcionamiento.</p>
+<p>En <code>/config.toml</code> debemos agregar <code>[params]</code> para agregar información básica y <code>[menu]</code>
+para agregar las categorías de nuestro blog.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>params</span>]
+    <span style=color:#a6e22e>avatarURL</span> = <span style=color:#e6db74>&#34;images/horrible.png&#34;</span>
+    <span style=color:#a6e22e>description</span> = <span style=color:#e6db74>&#34;Mejor lo voy anotar, después se me olvida&#34;</span>
+    <span style=color:#a6e22e>customHeadHTML</span> = <span style=color:#e6db74>&#39;&#39;&#39;
+</span><span style=color:#e6db74>    &lt;link rel=&#34;apple-touch-icon&#34; sizes=&#34;180x180&#34; href=&#34;/apple-touch-icon.png&#34;&gt;
+</span><span style=color:#e6db74>    &#39;&#39;&#39;</span>
+    <span style=color:#a6e22e>metaKeywords</span> = [<span style=color:#e6db74>&#34;blog&#34;</span>, <span style=color:#e6db74>&#34;gokarna&#34;</span>, <span style=color:#e6db74>&#34;hugo&#34;</span>, <span style=color:#e6db74>&#34;hola&#34;</span>, <span style=color:#e6db74>&#34;mundo&#34;</span>, <span style=color:#e6db74>&#34;ggwp&#34;</span>]
+    <span style=color:#a6e22e>footer</span> = <span style=color:#e6db74>&#34;MiBew&#34;</span>
+    <span style=color:#a6e22e>showPostsOnHomePage</span> = <span style=color:#e6db74>&#34;recent&#34;</span></code></pre></div>
+<code>avatarUrl</code>: Hace referencia al contenido de la carpeta <code>/static/images</code>.<br>
+<code>Description</code>: Descripción en HomePage.<br>
+<code>customHeadHTML</code>: Injecta HTML en el tag HEAD.<br>
+<code>metaKeywords</code>: Keywords para SEO.<br>
+<code>footer</code>: Texto customizable de footer.<br>
+<code>showPostsOnHomePage</code>: Muestra post en la página inicial. (Opcional)</p>
+<ul>
+<li>👉 Para <code>customHeadHTML</code> <a href=https://favicon.io/>Generar Favicons, Browserconfig & Manifest</a></li>
+</ul>
+<p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>menu</span>]
+  [[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+    <span style=color:#a6e22e>identifier</span> = <span style=color:#e6db74>&#34;posts&#34;</span>
+    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/posts/&#34;</span>
+    <span style=color:#a6e22e>pre</span> = <span style=color:#e6db74>&#34;&lt;span data-feather=&#39;book&#39;&gt;&lt;/span&gt;&#34;</span>
+    <span style=color:#a6e22e>post</span> = <span style=color:#e6db74>&#34;&#34;</span>
+    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;Posts&#34;</span>
+    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>1</span></code></pre></div>
+<code>identifier</code>: Identificador único para un item del menu.<br>
+<code>url</code>: url (En la carpeta <code>/content</code> se encuentran todas la rutas)<br>
+<code>pre</code>: Inserta un icono antes del menu/categoría.<br>
+<code>post</code>: Inserta un icono despues del menu/categoría.<br>
+<code>name</code>: Nombre a mostrar.<br>
+<code>weight</code>: Determina el orden.</p>
+<h3 id=agregar-post>Agregar Post</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>hugo new posts/instalar_configurar_hugo.md</code></pre></div>
+<blockquote>
+<p>&ldquo;instalar_configurar_hugo.md&rdquo; es el nombre de tu nuevo Post 😃</p>
+</blockquote>
+<h4 id=configurar-post>Configurar Post</h4>
+<p>El Post que hemos creado se encuentra en <code>/content/posts/</code> en mi caso el archivo se llama <code>instalar_configurar_hugo.md</code>.<br>
+Agregamos propiedades como <code>description</code>, <code>tags</code>, <code>type</code> y editamos <code>title</code> a gusto, <code>draft</code> debe estar en <code>false</code> para
+que podamos ver el Post en nuestra web.<br>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>---</span>
+<span style=color:#a6e22e>title</span>: <span style=color:#e6db74>&#34;Instalar y Configurar HUGO&#34;</span>
+<span style=color:#a6e22e>tags</span>: [<span style=color:#e6db74>&#34;Instalar y Configurar&#34;</span>]
+<span style=color:#a6e22e>date</span>: <span style=color:#ae81ff>2022</span><span style=color:#f92672>-</span><span style=color:#ae81ff>09</span><span style=color:#f92672>-</span><span style=color:#ae81ff>27</span><span style=color:#a6e22e>T19</span>:<span style=color:#ae81ff>43</span>:<span style=color:#ae81ff>30</span><span style=color:#f92672>-</span><span style=color:#ae81ff>03</span>:<span style=color:#ae81ff>00</span>
+<span style=color:#a6e22e>description</span>: <span style=color:#e6db74>&#34;Guía para instalar y configurar HUGO, framework para generar web estáticas.&#34;</span>
+<span style=color:#a6e22e>draft</span>: <span style=color:#66d9ef>false</span>
+<span style=color:#66d9ef>type</span>: <span style=color:#e6db74>&#34;post&#34;</span>
+<span style=color:#f92672>---</span></code></pre></div></p>
+<h3 id=agregar-table-content>Agregar Table Content</h3>
+<p>Este paso si lo dejé como opcional, si quieres puedes continuar a la sección de Pruebas Locales y probar tu web 😉.</p>
+<p>Volvemos a modificar nuestro arhivo <code>config.toml</code> que se encuentra en la raíz del proyecto y agregamos <code>[markup]</code>.
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml>[<span style=color:#a6e22e>markup</span>]
+  [<span style=color:#a6e22e>markup</span>.<span style=color:#a6e22e>tableOfContents</span>]
+    <span style=color:#a6e22e>startLevel</span> = <span style=color:#ae81ff>1</span>
+    <span style=color:#a6e22e>endLevel</span> = <span style=color:#ae81ff>5</span>
+    <span style=color:#a6e22e>ordered</span> = <span style=color:#66d9ef>false</span></code></pre></div></p>
+<h4 id=configurar-table-content>Configurar Table Content</h4>
+<p>En los post que se desea agregar la Tabla de Contenidos se debe agregar/activar <code>showTableOfContents</code>, agregamos la propiedad quedando de la siguiente manera:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>title</span>: <span style=color:#e6db74>&#34;Instalar y Configurar HUGO&#34;</span>
+<span style=color:#a6e22e>tags</span>: [<span style=color:#e6db74>&#34;Instalar y Configurar&#34;</span>]
+<span style=color:#a6e22e>date</span>: <span style=color:#ae81ff>2022</span><span style=color:#f92672>-</span><span style=color:#ae81ff>09</span><span style=color:#f92672>-</span><span style=color:#ae81ff>27</span><span style=color:#a6e22e>T19</span>:<span style=color:#ae81ff>43</span>:<span style=color:#ae81ff>30</span><span style=color:#f92672>-</span><span style=color:#ae81ff>03</span>:<span style=color:#ae81ff>00</span>
+<span style=color:#a6e22e>description</span>: <span style=color:#e6db74>&#34;Guía para instalar y configurar HUGO, framework para generar web estáticas.&#34;</span>
+<span style=color:#a6e22e>draft</span>: <span style=color:#66d9ef>false</span>
+<span style=color:#66d9ef>type</span>: <span style=color:#e6db74>&#34;post&#34;</span>
+<span style=color:#a6e22e>showTableOfContents</span>: <span style=color:#66d9ef>true</span></code></pre></div></p>
+<h2 id=pruebas-locales>Pruebas locales</h2>
+<p>Ya podemos probar y ver nuestra hermosa web 😍 (de manera local).<br>
+Ejecuta el siguiente comando:
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>hugo serve</code></pre></div></p>
+<blockquote>
+<p>&lsquo;serve&rsquo; inicia un servidor local para desarrollo.</p>
+</blockquote>
+<p>🎉Listo!🎉</p>
+<p>Ingresa en <a href=http://localhost:1313>http://localhost:1313</a> para ver tu Web.</p>
+<h2 id=deploy>Deploy</h2>
+<p>Not yet</p>
+<h2 id=documentación-relacionada>Documentación relacionada</h2>
+<p>Mucha de la configuración que se realizó no está bien detallada en esta guía por lo que te recomiendo que leas lo siguiente para que te quites algunas dudas.</p>
+<p>🔗<a href=https://github.com/techeca/MiBew/tree/1.0>Repositorio de este proyecto en Github</a></p>
+<p>🔗Si tienes problemas para agregar otros accesos ademas de post (como /tags o /projects), dejo la <a href=https://main--gokarna-hugo.netlify.app/posts/theme-documentation-basics//>documentacion de Gokarna</a> con más detalles de el porqué de algunas cosas.</p>
+<p>🔗Tambien dejo el link a la <a href=https://gohugo.io/getting-started/quick-start/>documentación oficial de HUGO</a> la cual tiene más información para la customización de tu proyecto.</p>
+</p>
+</div>
+</div>
+<aside class=post-toc>
+<nav id=toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#instalar-hugo>Instalar HUGO</a>
+<ul>
+<li><a href=#configurar-hugo>Configurar HUGO</a>
+<ul>
+<li><a href=#agregar-tema>Agregar Tema</a>
+<ul>
+<li><a href=#configurar-tema>Configurar Tema</a></li>
+</ul>
+</li>
+<li><a href=#agregar-post>Agregar Post</a>
+<ul>
+<li><a href=#configurar-post>Configurar Post</a></li>
+</ul>
+</li>
+<li><a href=#agregar-table-content>Agregar Table Content</a>
+<ul>
+<li><a href=#configurar-table-content>Configurar Table Content</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#pruebas-locales>Pruebas locales</a></li>
+<li><a href=#deploy>Deploy</a></li>
+<li><a href=#documentación-relacionada>Documentación relacionada</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</nav>
+</aside>
+</main><footer class=footer>
+<span>&copy; 2022 MiBew</span>
+<span>
+Made with &#10084;&#65039; using <a target=_blank href=https://github.com/526avijitgupta/gokarna>Gokarna</a>
+</span>
+</footer>
+</body>
+</html>
